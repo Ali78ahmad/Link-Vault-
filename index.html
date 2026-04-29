@@ -1,0 +1,30 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkVault Offline</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="container">
+        <h1>LinkVault</h1>
+        
+        <div class="input-section">
+            <input type="text" id="linkInput" placeholder="Paste link here...">
+            <select id="categorySelect">
+                <option value="Motivation">Motivation</option>
+                <option value="Work">Work</option>
+            </select>
+            <button onclick="addNewCategory()">+ New Category</button>
+            <button id="saveBtn" class="primary-btn">Save Link</button>
+        </div>
+
+        <div id="displayArea">
+            </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
